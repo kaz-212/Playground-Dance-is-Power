@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap");
 
 body {
   margin: 0;
   // background: black;
   // background: black, linear-gradient(240deg, #FF0000 0%, rgba(255, 0, 0, 0) 100%)
-  background: linear-gradient(244deg, #DA0808 0.69%, rgba(255, 0, 0, 0.00) 61.85%), #000;
+  background: linear-gradient(244deg, #da0808 0.69%, rgba(255, 0, 0, 0) 61.85%), #000;
 }
 html,
 body,
@@ -13,16 +12,19 @@ body,
   height: 100%;
 }
 
-
-
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h1 {
-    font-family: 'Climate Crisis', sans-serif;
+    font-family: "Climate Crisis", sans-serif;
     color: white;
     font-size: 3.3em;
+  }
+
+  span.noun {
+    display: inline-block;
+    min-width: 420px;
   }
 }
