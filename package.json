@@ -11,7 +11,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "homepage": "https://kaz-212.github.io/Playground-Dance-is-Power/",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@splinetool/react-spline": "^2.2.1",
@@ -21,6 +24,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^3.1.0-beta.0",
+    "gh-pages": "^6.1.1",
     "sass": "^1.70.0",
     "vite": "^4.1.0-beta.1"
   }
