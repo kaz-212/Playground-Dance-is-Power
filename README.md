@@ -1,5 +1,7 @@
 # Playground: Dance is Power
 
+[Check it out!](https://kaz-212.github.io/Playground-Dance-is-Power/)
+
 Messing around with spline and 3d interactivity in the browser.
 Here you'll find a girl dancing with the lighting illuminating her following the cursor.
 
