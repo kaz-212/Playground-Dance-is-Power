@@ -2,7 +2,7 @@ import Spline from "@splinetool/react-spline";
 import { useEffect, useRef, useState } from "react";
 
 export default function App() {
-  const NOUNS = ["Freedom", "Liberation", "Expression", "Power"];
+  const NOUNS = ["Freedom ...", "Liberation ...", "Expression ...", "Power!"];
   const [wordIndex, setWordIndex] = useState(0);
   const nounRef = useRef(null);
   const sleep = ms => {
@@ -15,7 +15,7 @@ export default function App() {
       console.log(currentWord.slice(0, i));
       nounRef.current.innerText = currentWord.slice(0, i);
     }
-    await sleep(1000);
+    await sleep(1200);
     for (let i = currentWord.length; i >= 0; i--) {
       await sleep(80);
       console.log(currentWord.slice(0, i));
@@ -33,7 +33,9 @@ export default function App() {
       <h1>
         Dance is <span className='noun' ref={nounRef}></span>
       </h1>
-      <Spline scene='https://prod.spline.design/nbNul2bDeW3SRbn0/scene.splinecode' />
+      <section>
+        <Spline scene='https://prod.spline.design/nbNul2bDeW3SRbn0/scene.splinecode' />
+      </section>
     </main>
   );
 }
