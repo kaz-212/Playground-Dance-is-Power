@@ -13,6 +13,25 @@ body,
   height: 100%;
 }
 
+* {
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #a50c09;
+  mix-blend-mode: difference;
+  filter: drop-shadow(0 0 2.75rem #d42447);
+  pointer-events: none;
+  z-index: 9999;
+  // transition: left 0.3s ease-out, top 0.3s ease-out;
+}
+
 main {
   display: flex;
   flex-direction: column;
